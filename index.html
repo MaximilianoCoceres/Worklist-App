@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=0, initial-scale=1.0" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; https://*.googleapis/*/ https://*.fontawesome.com/*/ script-src 'self' 'unsafe-eval'; object-src 'self'"> -->
+    <title>To Do Work</title>
+    <!-- Font Icons -->
+    <script
+      src="https://kit.fontawesome.com/7f30dab9c1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="" class="logo" />
+    </header>
+    <main>
+      <h1>WorkList</h1>
+      <form action="#" class="formCode">
+        <label for="" class="titleCode">Código de página</label>
+        <input
+          type="text"
+          placeholder="Cod Proyecto"
+          autofocus
+          class="codigo"
+        />
+      </form>
+
+      <form action="#" id="userInput">
+        <input
+          type="text"
+          placeholder="Escribe tu tarea aqui.."
+          autofocus
+          class="inputTask"
+          name="inputTask"
+        />
+        <input type="submit" value="+" id="addBtn" />
+      </form>
+
+      <div id="list" class="list__container"></div>
+      <div id="stats"></div>
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <form class="modalContainer" id="modalForm">
+          <span class="close">&times;</span>
+          <h2>Edit Task</h2>
+          <div class="modal-content"></div>
+          <div class="modalFooter">
+            <button class="btnEdit">Editar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer><p>By Maximiliano Cóceres</p></footer>
+
+    <script src="./main.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
